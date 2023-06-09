@@ -18,7 +18,7 @@ export default function CriarConta({navigation}) {
       <TextInput style={styles.inputEmail} placeholder="Seu email" />
       <TextInput style={styles.inputSenha} placeholder="Crie uma senha" />
       <TouchableOpacity onPress={cadastrando} style={styles.button}>
-        <Text>Cadastrar</Text>
+        <Text style={styles.textButoon}>Cadastrar</Text>
       </TouchableOpacity>
     </View>
   );
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: '#000000',
-    marginTop: 90,
+    marginTop: 150,
     fontWeight: 'bold',
     fontSize: 30,
   },
@@ -44,6 +44,8 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     padding: 13,
     marginBottom: 8,
+    paddingLeft: 20,
+    fontWeight: '500',
   },
   inputEmail: {
     fontSize: 16,
@@ -51,26 +53,34 @@ const styles = StyleSheet.create({
     color: '#000000',
     backgroundColor: '#808080',
     borderRadius: 20,
+    paddingLeft: 20,
     marginBottom: 8,
+    fontWeight: '500',
   },
   inputSenha: {
     fontSize: 16,
     width: '80%',
     color: '#000000',
+    paddingLeft: 20,
     backgroundColor: '#808080',
     borderRadius: 20,
     marginBottom: 8,
+    fontWeight: '500',
   },
   button: {
-    marginTop: 40,
+    marginTop: 20,
     backgroundColor: '#008000',
-    fontSize: 20,
-    color: '#FFFFFF',
     fontWeight: 'bold',
-    width: 250,
+    width: '80%',
     height: 40,
     borderRadius: 10,
     alignItems: 'center',
     padding: 8,
+  },
+  textButoon: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+    alignItems: 'center',
   },
 });

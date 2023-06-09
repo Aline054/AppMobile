@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   View,
   Text,
@@ -16,7 +16,7 @@ export default function Login({navigation}) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Faça seu login</Text>
-      <TextInput style={styles.TextSenha} placeholder="Digite seu email" />
+      <TextInput style={styles.TextEmail} placeholder="Digite seu email" />
       <TextInput style={styles.TextSenha} placeholder="Digite sua senha" />
       <TouchableOpacity onPress={handleLogin}>
         <Text style={styles.buttonText}>Acessar</Text>
@@ -40,34 +40,41 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 30,
   },
-  TextInput: {
-    marginTop: 50,
+  TextEmail: {
     width: '80%',
     fontSize: 18,
+    marginTop: 40,
     color: '#000000',
+    backgroundColor: '#808080',
+    borderRadius: 50,
+    paddingLeft: 20,
   },
   TextSenha: {
     width: '80%',
     fontSize: 18,
-    marginTop: 15,
+    marginTop: 10,
     color: '#000000',
+    backgroundColor: '#808080',
+    borderRadius: 50,
+    paddingLeft: 20,
   },
   buttonText: {
-    marginTop: 60,
+    marginTop: 30,
     backgroundColor: '#008000',
-    fontSize: 16,
+    fontSize: 19,
     color: '#FFFFFF',
-    width: 200,
+    width: 300,
     height: 40,
     borderRadius: 8,
     alignItems: 'center',
     padding: 8,
-    paddingLeft: 60,
+    paddingLeft: 110,
   },
   buttoncontas: {
     color: '#0000FF',
     fontWeight: 'bold',
-    marginTop: 30,
-    fontSize: 16,
+    marginTop: 20,
+    fontSize: 18,
+    marginLeft: 180,
   },
 });
